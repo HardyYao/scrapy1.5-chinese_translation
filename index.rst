@@ -52,7 +52,7 @@ BASIC CONCEPT
    docs/topics/link_extractors
    docs/topics/settings
    docs/topics/exceptions
->>>>>>> 21c1efdb828e656cac854388b0de45b934e89c91
+>>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 :doc: `docs/topics/command_line_tool`
      Command Line Tool 
@@ -68,7 +68,7 @@ BASIC CONCEPT
 :doc: `docs/topics/item`
      Item
 
->>>>>>> 21c1efdb828e656cac854388b0de45b934e89c91
+>>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 :doc: `docs/topics/scrapy_shell`
      Scrapy Shell
 
@@ -79,7 +79,7 @@ BASIC CONCEPT
 :doc: `docs/topics/feed_export`
 =======
 :doc: `docs/topics/feed_exports`
->>>>>>> 21c1efdb828e656cac854388b0de45b934e89c91
+>>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
      Feed Export
 
 :doc: `docs/topics/link_extractors`
@@ -92,7 +92,7 @@ BASIC CONCEPT
 =======
 :doc: `docs/topics/exceptions`
     Exceptions
->>>>>>> 21c1efdb828e656cac854388b0de45b934e89c91
+>>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 Indices and tables
 ==================

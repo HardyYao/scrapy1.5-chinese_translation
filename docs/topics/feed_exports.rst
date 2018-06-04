@@ -8,7 +8,7 @@ feed导出
 .. 新版本:: 0.10
 =======
 .. versionadded:: 0.10
->>>>>>> 21c1efdb828e656cac854388b0de45b934e89c91
+>>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 实现爬虫最常需要的功能之一是能够正确地存储所爬到的的数据，这通常意味着生成一个带有爬取到的数据的“导出文件”（通常成为“导出feed”），以供给其他系统使用。
 
@@ -33,7 +33,7 @@ Scrapy自带了feed导出，并且支持多种序列化格式以及存储后端�
  * :ref:`docs-topics-feed-format-jsonlines`
  * :ref:`docs-topics-feed-format-csv`
  * :ref:`docs-topics-feed-format-xml`
->>>>>>> 21c1efdb828e656cac854388b0de45b934e89c91
+>>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 你也可以通过 :setting:`FEED_EXPORTERS` 设置扩展支持的属性。
 
@@ -65,7 +65,7 @@ CSV
  * 要指定所要导出的列及其顺序，请使用 :setting:`FEED_EXPORT_FIELDS`。其他feed导出程序也可以使用此选项，但这对于CSV来说很重要，因为与许多其他导出格式不同，CSV使用固定标题。
 =======
  * 要指定所要导出的列及其顺序，请使用 :setting:`FEED_EXPORT_FIELDS` 。其他feed导出程序也可以使用此选项，但这对于CSV来说很重要，因为与许多其他导出格式不同，CSV使用固定标题。
->>>>>>> 21c1efdb828e656cac854388b0de45b934e89c91
+>>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 .. _docs-topics-feed-format-xml:
 
@@ -122,7 +122,7 @@ Marshal
 其它命名的参数会被spider同名的属性所覆盖。例如，当feed被创建时，``%(site_id)s``将会被``spider.site_id``属性所覆盖。
 =======
 其它命名的参数会被spider同名的属性所覆盖。例如，当feed被创建时，``%(site_id)s``将会被 ``spider.site_id`` 属性所覆盖。
->>>>>>> 21c1efdb828e656cac854388b0de45b934e89c91
+>>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 这里有一些例子用于说明：
 
@@ -159,7 +159,7 @@ Marshal
 .. note:: (只有) 存储在本地文件系统时，你可以指定一个绝对路径``/tmp/export.csv``并忽略协议（scheme）。不过这仅仅适用于Unix系统中。
 
 .. _docs-topics-feed-storage-ftp:
->>>>>>> 21c1efdb828e656cac854388b0de45b934e89c91
+>>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 FTP
 ---
@@ -229,7 +229,7 @@ Default: ``None``
 导出feed的URI。支持的URI协议请参见存储后端 :ref:`topics-feed-storage-backends`。
 =======
 导出feed的URI。支持的URI协议请参见存储后端 :ref:`docs-topics-feed-storage-backends`。
->>>>>>> 21c1efdb828e656cac854388b0de45b934e89c91
+>>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 为了启用feed导出，该设定是必须的。
 

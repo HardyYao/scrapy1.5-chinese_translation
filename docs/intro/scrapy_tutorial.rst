@@ -17,7 +17,7 @@ Scrapy 教程
 4. 使用follow links将爬虫改为可递归的
 =======
 4. 使用follow links让爬虫可以递的归追踪链接
->>>>>>> 21c1efdb828e656cac854388b0de45b934e89c91
+>>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 5. 使用spider参数
 
 Scrapy完全使用python编写.如果你并不熟悉python编程语言，没关系，除了Scrapy之外你可以从很多地方了解到这门语言。
@@ -399,7 +399,7 @@ item pipeline。
 .. _JQ: https://stedolan.github.io/jq
 
 
->>>>>>> 21c1efdb828e656cac854388b0de45b934e89c91
+>>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 追踪链接
 ========
 
@@ -604,4 +604,4 @@ Scrapy 追踪链接的机制：当你在一个回调方法中发起一个 Reques
 .. _Examples: :https://www.baidu.com
 =======
 .. _Examples: https://www.baidu.com
->>>>>>> 21c1efdb828e656cac854388b0de45b934e89c91
+>>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6

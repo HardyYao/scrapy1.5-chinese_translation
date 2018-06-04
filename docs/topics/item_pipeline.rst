@@ -28,7 +28,7 @@ Spider 抓取的 Item 会被发送到 Item Pipeline，Pipeline 会使用一些�
     (或者一个可以继承的) 对象, 返回一个  :ref:`Twisted Deferred`_  或者抛出一个
 =======
     (或者一个可以继承的) 对象, 返回一个 `Twisted Deferred`_ 或者抛出一个
->>>>>>> 21c1efdb828e656cac854388b0de45b934e89c91
+>>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
     :exc:`~scrapy.exceptions.DropItem` 异常。丢弃的 item 不会被下一个 pipeline 
     组件处理。
 
@@ -121,7 +121,7 @@ item 写入 json 文件
     例子中类 JsonWriterPipeline 的目的只是为了介绍怎么编写 item pipelines 。如果你真的想把爬取到的 item 存到 json 文件中，你应该使用  _`Feed exports`  。
 =======
     例子中类 JsonWriterPipeline 的目的只是为了介绍怎么编写 item pipelines 。如果你真的想把爬取到的 item 存到 json 文件中，你应该使用  `Feed exports`_  。
->>>>>>> 21c1efdb828e656cac854388b0de45b934e89c91
+>>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 .. _`Feed exports`: https://docs.scrapy.org/en/latest/topics/feed-exports.html#topics-feed-exports
 

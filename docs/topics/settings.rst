@@ -595,7 +595,7 @@ DUPEFILTER_DUBUG
 默认情况下， ``RFPDupeFilter`` 只记录第一条重复的请求。将 :setting:`DUPEFILTER_DEBUG` 设置为 ``True`` 来记录所有的重复请求。
 
 .. setting:: EDITOR
->>>>>>> 21c1efdb828e656cac854388b0de45b934e89c91
+>>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 EDITOR
 --------
@@ -649,7 +649,7 @@ Feed Temp 目录允许你设定一个自定义的目录用来保存爬虫临时�
  和 :ref:`Amazon S3 <topics-feed-storage-s3>` 。
 =======
 Feed Temp 目录允许你设定一个自定义的目录用来保存爬虫临时文件，用于接下来将文件上传至 :ref:`FTP feed storage <topics-feed-storage-ftp>` 和 :ref:`Amazon S3 <topics-feed-storage-s3>` 。
->>>>>>> 21c1efdb828e656cac854388b0de45b934e89c91
+>>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 .. setting:: FTP_PASSIVE_MODE
 
@@ -721,7 +721,7 @@ LOG_ENABLED
 ..setting:: LOG_ENCODING
 =======
 .. setting:: LOG_ENCODING
->>>>>>> 21c1efdb828e656cac854388b0de45b934e89c91
+>>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 LOG_ENCODING
 -------------
