@@ -9,9 +9,7 @@
  * `BeautifulSoup`_ : 在Python编程人员眼中，这是一个非常流行的网页数据提取库，它通过HTML代码来构建一个
    Python对象，并且可以合理的处理一些HTML代码中的错误标记，当然，它的缺点就是处理速度太慢。
 
- * `lxml`_ : 这是一个XML解释库，它基于一个非常 pythonic 的接口 `ElementTree`_ 。(lxml 并不是Python
-    标准库中的一部分。)
-=======
+<<<<<<< HEAD
  * `lxml`_ : 这是一个XML解释库，它基于一个非常 pythonic 的接口 `ElementTree`_ (lxml 并不是Python标准库中的一部分。)
 =======
  * `lxml`_ : 这是一个XML解释库，它基于一个非常 pythonic 的接口 `ElementTree`_  (lxml 并不是Python标准库中的一部分。)
@@ -25,8 +23,6 @@ Scrapy中提供了一套自己的数据提取机制。因为它通过 `Xpath`_ �
 
 Scrapy选择器建立在 `lxml`_ 库之上，这就意味着它在解析速度和精确度上与lxml很相似。
 
-本节将会解释选择器如何工作，并且描述它们的API(应用程序接口)相比于 `lxml`_的API是多么的小和方便(lxml API由于它不仅仅可以处理标记文档[HTML，XML]的选择，而且可以处理更多其他的任务，所以相较于选择器他的体积更大。)
-=======
 本节将会解释选择器如何工作，并且描述它们的API(应用程序接口)相比于 `lxml`_ 的API是多么的小和方便(lxml API由于它不仅仅可以处理标记文档[HTML，XML]的选择，而且可以处理更多其他的任务，所以相较于选择器他的体积更大。)
 
 获取完整的选择器接口文档
@@ -49,11 +45,7 @@ Scrapy选择器建立在 `lxml`_ 库之上，这就意味着它在解析速度�
 .. highlight:: python
 
 Scrapy选择器是一些 :class:`~scrapy.selecotr.Selector` 类的实例，构建该实例可以通过传入 **text** 参数
-
-或者 :class:`~scrapy.http.TextResponse`对象。它将会自动对比传入的参数，然后选择一个最好的解析规则(XML vs HTML)::
-=======
 或者 :class:`~scrapy.http.TextResponse` 对象。它将会自动对比传入的参数，然后选择一个最好的解析规则(XML vs HTML)::
-
 
     >>> from scrapy.selector import Selector
     >>> from scrapy.http import HtmlResponse
@@ -105,9 +97,6 @@ Scrapy选择器是一些 :class:`~scrapy.selecotr.Selector` 类的实例，构�
 
 .. highlight:: python
 
-<<<<<<< HEAD
-因此，通过观察这个网页 :ref:`HTML code <topics-selectors-htmlcode>`， 我们构建一个Xpath选择器来
-=======
 因此，通过观察这个网页 :ref:`HTML code <topics-selectors-htmlcode>` ， 我们构建一个Xpath选择器来
 从标题标签(title tag)中提取文本信息::
 
@@ -132,16 +121,11 @@ Scrapy选择器是一些 :class:`~scrapy.selecotr.Selector` 类的实例，构�
      u'image4_thumb.jpg',
      u'image5_thumb.jpg']
 
-
-要真正的提取到这个文本数据，你必须调用选择器中的 ``.extract()``方法(该方法将会返回一个数据列表)::
-=======
 要真正的提取到这个文本数据，你必须调用选择器中的 ``.extract()`` 方法(该方法将会返回一个数据列表)::
 
     >>> response.xpath('//title/text()').extract()
     [u'Example website']
 
-如果你只想提取匹配到的第一个数据，你可以使用选择器中的 ``.extract_first()``方法
-=======
 如果你只想提取匹配到的第一个数据，你可以使用选择器中的 ``.extract_first()`` 方法
 
     >>> response.xpath('//div[@id="images"]/a/text()').extract_first()
@@ -204,9 +188,6 @@ Scrapy选择器是一些 :class:`~scrapy.selecotr.Selector` 类的实例，构�
 嵌套选择器
 ------------
 
-<<<<<<< HEAD
-选择方法 (``.xpath()`` or ``.css()``) 返回一个相同类型的选择器列表，所以，你仍然可以对这些选择器调用
-=======
 选择方法 ( ``.xpath()`` or ``.css()`` ) 返回一个相同类型的选择器列表，所以，你仍然可以对这些选择器调用
 选择方法::
 
@@ -269,8 +250,6 @@ Scrapy选择器是一些 :class:`~scrapy.selecotr.Selector` 类的实例，构�
     >>> for p in divs.xpath('.//p'):  # extracts all <p> inside
     ...     print p.extract()
 
-另一个常用的方法就是，直接提取所有的 子元素 ``<p>``::
-=======
 另一个常用的方法就是，直接提取所有的 子元素 ``<p>`` ::
 
     >>> for p in divs.xpath('p'):
@@ -453,8 +432,6 @@ set     \http://exslt.org/sets                   `set manipulation`_
 关于XPath的一些小提示
 ------------------------
 
-当你在Scrapy选择器中使用XPath时，这里有一些小提示: `this post from ScrapingHub's blog`_, 如果你
-=======
 当你在Scrapy选择器中使用XPath时，这里有一些小提示: `this post from ScrapingHub's blog`_ , 如果你
 并不熟悉XPath，你可以看一下 `XPath tutorial`_。
 
@@ -465,8 +442,6 @@ set     \http://exslt.org/sets                   `set manipulation`_
 在条件语句中使用文本节点
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-当你在 `XPath string function`_ 中使用文本内容作为参数时，最好避免使用 ``.//text()`` ，而是使用 ``.``来作为替代。
-=======
 当你在 `XPath string function`_ 中使用文本内容作为参数时，最好避免使用 ``.//text()`` ，而是使用 ``.`` 来作为替代。
 这是因为， 使用表达式 ``.//text()`` 将会产出一个文本元素(节点)集合( *node-set* )，将该节点集合转换为一个字符串时，
 该节点将会作为参数传递给像: ``contains()`` 或 ``starts-with()`` 这样的字符串函数，但是只会返回第一个元素的结果。
@@ -620,8 +595,6 @@ set     \http://exslt.org/sets                   `set manipulation`_
       同样的，使用CSS选择器并返回一个 :class:`SelectorList` 实例。
       ``query`` 是一个包含了可以被CSS选择器使用的字符串。
 
-      在程序执行的背后，CSS查询被 `cssselect`_ 转换为XPath查询并且以 ``.xpath()``方法运行。
-=======
       在程序执行的背后，CSS查询被 `cssselect`_ 转换为XPath查询并且以 ``.xpath()`` 方法运行。
 
       .. note::
@@ -645,8 +618,6 @@ set     \http://exslt.org/sets                   `set manipulation`_
 
   .. method:: register_namespace(prefix, uri)
 
-     在 :class:`Selector`中使用已注册的命名空间。你不能从未注册的非标准命名空间中进行数据的选择
-=======
      在 :class:`Selector` 中使用已注册的命名空间。你不能从未注册的非标准命名空间中进行数据的选择
      和提取。
 
@@ -665,8 +636,6 @@ set     \http://exslt.org/sets                   `set manipulation`_
 
 .. class:: SelectorList
 
-   :class:`SelectorList` 类是Python内置类 ``list` 的一个子类，同时提供了一些附加的方法。
-=======
    :class:`SelectorList` 类是Python内置类 ``list`` 的一个子类，同时提供了一些附加的方法。
 
    .. method:: xpath(query)
@@ -770,4 +739,3 @@ XML类型选择器案例
 
      
         
-
