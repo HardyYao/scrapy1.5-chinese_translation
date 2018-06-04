@@ -26,7 +26,7 @@ First step
 
 :doc: `docs/intro/examples`
      Scrapy Examples
-     
+     
      
 BASIC CONCEPT
 ==============
@@ -38,13 +38,6 @@ BASIC CONCEPT
    docs/topics/command_line_tool   
    docs/topics/spiders
    docs/topics/selectors
-<<<<<<< HEAD
-   docs/topics/scrapy_shell
-   docs/topics/item_pipeline
-   docs/topics/feed_export
-   docs/topics/link_extractors
-   docs/topics/settings
-=======
    docs/topics/item
    docs/topics/scrapy_shell
    docs/topics/item_pipeline
@@ -52,7 +45,6 @@ BASIC CONCEPT
    docs/topics/link_extractors
    docs/topics/settings
    docs/topics/exceptions
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 :doc: `docs/topics/command_line_tool`
      Command Line Tool 
@@ -63,23 +55,16 @@ BASIC CONCEPT
 :doc: `docs/topics/selector`
      Scrapy Selector
 
-<<<<<<< HEAD
-=======
 :doc: `docs/topics/item`
      Item
 
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 :doc: `docs/topics/scrapy_shell`
      Scrapy Shell
 
 :doc: `docs/topics/item_pipeline`
      Item Pipeline
 
-<<<<<<< HEAD
-:doc: `docs/topics/feed_export`
-=======
 :doc: `docs/topics/feed_exports`
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
      Feed Export
 
 :doc: `docs/topics/link_extractors`
@@ -88,11 +73,8 @@ BASIC CONCEPT
 :doc: `docs/topics/settings`
      Settings
 
-<<<<<<< HEAD
-=======
 :doc: `docs/topics/exceptions`
     Exceptions
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 Indices and tables
 ==================
@@ -100,4 +82,3 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
-
