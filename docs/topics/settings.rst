@@ -586,16 +586,9 @@ DUPEFILTER_DUBUG
 
 默认值: ``False``
 
-<<<<<<< HEAD
-默认情况下， ``RFPDupeFilter`` 只记录第一条重复的请求。将 :setting:`DUPEFILTER_DEBUG` 设置为 ``True``
- 来记录所有的重复请求。
-
-..setting:: EDITOR
-=======
 默认情况下， ``RFPDupeFilter`` 只记录第一条重复的请求。将 :setting:`DUPEFILTER_DEBUG` 设置为 ``True`` 来记录所有的重复请求。
 
 .. setting:: EDITOR
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 EDITOR
 --------
@@ -644,12 +637,7 @@ EXTENSIONS_BASE
 FEED_TEMPDIR
 --------------
 
-<<<<<<< HEAD
-Feed Temp 目录允许你设定一个自定义的目录用来保存爬虫临时文件，用于接下来将文件上传至 :ref:`FTP feed storage <topics-feed-storage-ftp>`
- 和 :ref:`Amazon S3 <topics-feed-storage-s3>` 。
-=======
 Feed Temp 目录允许你设定一个自定义的目录用来保存爬虫临时文件，用于接下来将文件上传至 :ref:`FTP feed storage <topics-feed-storage-ftp>` 和 :ref:`Amazon S3 <topics-feed-storage-s3>` 。
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 .. setting:: FTP_PASSIVE_MODE
 
@@ -717,11 +705,7 @@ LOG_ENABLED
 
 是否启用日志功能。
 
-<<<<<<< HEAD
-..setting:: LOG_ENCODING
-=======
 .. setting:: LOG_ENCODING
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 LOG_ENCODING
 -------------
@@ -1225,4 +1209,3 @@ Settings documented elsehwhere:
 .. _Amazon web services: https://aws.amazon.com/
 .. _breadth-first order: https://en.wikipedia.org/wiki/Breadth-first_search
 .. _depth-first order: https://en.wikipedia.org/wiki/Depth-first_search
-

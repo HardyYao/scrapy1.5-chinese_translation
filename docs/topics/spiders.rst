@@ -13,15 +13,9 @@ Spider类定义了如何爬取某个(或某些)网站。包括了爬取的动作
 1. 首先通过初始化 requests 抓取第一个 URL，并设置回调函数。 当该 requests 下载完毕并返回时，
    将生成 response ，然后作为参数传给该回调函数。
 
-<<<<<<< HEAD
-   初始的 requests 是通过调用:meth:`~scrapy.spiders.Spider.start_requests`方法(默认情况下)为
-   :attr:`~scrapy.spiders.Spider.start_urls`中的URL生成初始:meth:`~scrapy.spiders.Spider.start_requests`请求
-   并且设置:attr:`~scrapy.spiders.Spider.parse`方法作为请求的回调函数。
-=======
    初始的 requests 是通过调用 :meth:`~scrapy.spiders.Spider.start_requests` 方法(默认情况下)为
    :attr:`~scrapy.spiders.Spider.start_urls` 中的URL生成初始 :meth:`~scrapy.spiders.Spider.start_requests` 请求
    并且设置 :attr:`~scrapy.spiders.Spider.parse` 方法作为请求的回调函数。
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 2. 在回调函数中，您将解析 Response（网页）并返回带有提取后的数据的 dict ，:class:`~scrapy.item.Item` 对象，:class:`~scrapy.http.Request` 对象
    或这些对象的可迭代容器。这些请求还将包含回调（可能是相同的），然后由 Scrapy 下载，然后由指定
@@ -30,11 +24,7 @@ Spider类定义了如何爬取某个(或某些)网站。包括了爬取的动作
 3. 在回调函数中，您通常使用 :ref:`docs-topics-selectors` 来解析页面内容（但您也可以使用BeautifulSoup，lxml或您喜欢的任何解析器），
    并使用解析的数据生成 Item。
 
-<<<<<<< HEAD
-4. 最后，由spider返回的 item 通常会持久化存储到数据库中（在某些:ref:`Item Pipeline <topics-item-pipeline>`中进行存储操作）或者
-=======
 4. 最后，由spider返回的 item 通常会持久化存储到数据库中（在某些 :ref:`Item Pipeline <topics-item-pipeline>` 中进行存储操作）或者
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
    使用 :ref:`topics-feed-exports` 写入到文件中。
    
 虽然这个循环（或多或少）适用于任何种类的 spider，Scrapy 实现了不同种类的默认 spider 用于不同的需求。
@@ -68,11 +58,7 @@ scrapy.Spider
 
        可选项。包含了spider允许抓取的域名列表。当 :class:`~scrapy.spidermiddlewares.offsite.OffsiteMiddleware` 启用时，不在域名列表中的URL不会被请求。
        
-<<<<<<< HEAD
-       比如您的目标网址是 ``https://www.example.com/1.html`` ，然后将``'example.com'``添加到列表中。
-=======
        比如您的目标网址是 ``https://www.example.com/1.html`` ，然后将 ``'example.com'`` 添加到列表中。
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
       
    .. attribute:: start_urls
 
@@ -259,11 +245,7 @@ Spiders 可以通过 `__init__` 方法访问参数::
 
 请记住，spider的参数只能是字符串。spider自己不会做任何解析。
 如果打算通过命令行设置 `start_urls` 属性,你必须使用类似`ast.literal_eval <https://docs.python.org/library/ast.html#ast.literal_eval>`_
-<<<<<<< HEAD
-或`json.loads <https://docs.python.org/library/json.html#json.loads>`_的方式将它解析到列表中，然后将其设置为属性。
-=======
 或`json.loads <https://docs.python.org/library/json.html#json.loads>`_ 的方式将它解析到列表中，然后将其设置为属性。
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 否则，你会迭代一个 start_urls 字符串（一个非常常见的python陷阱），导致每个字符被看作一个单独的url。 
 
 一个有用的例子是通过 :class:`~scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware` 设置 http auth 证书或
@@ -314,13 +296,8 @@ CrawlSpider
 
    .. method:: parse_start_url(response)
 
-<<<<<<< HEAD
-      这个方法是 start_urls 的响应。它允许解析初始响应，并且必须得返回一个:class:`~scrapy.item.Item`对象，
-      一个:class:`~scrapy.http.Request`对象或者一个包含其中任何一个对象的迭代器。
-=======
       这个方法是start_urls的响应。它允许解析初始响应，并且必须得返回一个 :class:`~scrapy.item.Item` 对象，
       一个:class:`~scrapy.http.Request` 对象或者一个包含其中任何一个对象的迭代器。
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 Crawling rules
 ~~~~~~~~~~~~~~
@@ -471,11 +448,7 @@ XMLFeedSpider example
             return item
 
 简单来说，我们做的就是创建一个spider，从给定的``start_urls``下载一个 feed.xml 文件，然后遍历每个``item``标签，
-<<<<<<< HEAD
-打印出来，并将一些随机数据存储在一个:class:`~scrapy.item.Item`中。
-=======
 打印出来，并将一些随机数据存储在一个 :class:`~scrapy.item.Item` 中。
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 CSVFeedSpider
 -------------
@@ -490,11 +463,7 @@ CSVFeedSpider
 
    .. attribute:: quotechar
 
-<<<<<<< HEAD
-       在CSV文件中每个字段的外围字符的字符串默认是``','``（引号）。
-=======
        在CSV文件中每个字段的外围字符的字符串默认是 ``'"'`` (引号)。
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
    .. attribute:: headers
 
@@ -537,11 +506,7 @@ SitemapSpider
 
 .. class:: SitemapSpider
 
-<<<<<<< HEAD
-    SitemapSpider使您爬取网站时可以通过 Sitemaps 来发现爬取的URL。其支持嵌套的sitemap，并能从robots.txt中获取 `Sitemaps`_的url。
-=======
     SitemapSpider使您爬取网站时可以通过 Sitemaps 来发现爬取的URL。其支持嵌套的sitemap，并能从robots.txt中获取 `Sitemaps`_ 的url。
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
     .. attribute:: sitemap_urls
 

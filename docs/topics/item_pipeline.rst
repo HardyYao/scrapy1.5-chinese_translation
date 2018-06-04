@@ -24,11 +24,7 @@ Spider 抓取的 Item 会被发送到 Item Pipeline，Pipeline 会使用一些�
 
     每个 item pipeline 组件都会调用这个方法。 :meth:`process_item`
     必须返回字典形式的数据, 返回一个 :class:`~scrapy.item.Item` 
-<<<<<<< HEAD
-    (或者一个可以继承的) 对象, 返回一个  :ref:`Twisted Deferred`_  或者抛出一个
-=======
     (或者一个可以继承的) 对象, 返回一个 `Twisted Deferred`_ 或者抛出一个
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
     :exc:`~scrapy.exceptions.DropItem` 异常。丢弃的 item 不会被下一个 pipeline 
     组件处理。
 
@@ -117,11 +113,7 @@ item 写入 json 文件
 
 .. Note:: 
     
-<<<<<<< HEAD
-    例子中类 JsonWriterPipeline 的目的只是为了介绍怎么编写 item pipelines 。如果你真的想把爬取到的 item 存到 json 文件中，你应该使用  _`Feed exports`  。
-=======
     例子中类 JsonWriterPipeline 的目的只是为了介绍怎么编写 item pipelines 。如果你真的想把爬取到的 item 存到 json 文件中，你应该使用  `Feed exports`_  。
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 .. _`Feed exports`: https://docs.scrapy.org/en/latest/topics/feed-exports.html#topics-feed-exports
 
@@ -238,7 +230,6 @@ item 存到 MongoDB
     }
 
 上面设置中类名后面的数字决定了相应的 piepline 运行的顺序了： 所有的 item 会根据这个数字从小到大传递给它相应的 pipeline 。它们的取值一般在 0-1000 之间。
-
 
 
 

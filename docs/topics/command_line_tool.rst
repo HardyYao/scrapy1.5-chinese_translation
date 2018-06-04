@@ -31,11 +31,7 @@ Scrapy可以通过一些环境变量来进行设置，如下:
 
 * ``SCRAPY_SETTINGS_MODULE`` (see :ref:`docs-topics-settings-module-envvar`)
 * ``SCRAPY_PROJECT``
-<<<<<<< HEAD
-* ``SCRAPY_PYTHON_SHELL`` (see :ref:`docs-topics-shell`)
-=======
 * ``SCRAPY_PYTHON_SHELL`` (see :ref:`docs-topics-scrapy-shell`)
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 .. _docs-topics-project-structure:
 
@@ -116,21 +112,13 @@ Scrapy项目的默认结构
 
 	scrapy genspider mydomain mydomain.com
 
-<<<<<<< HEAD
-一些Scrapy命令（如 :command:`crawl`）必须在Scrapy项目内部运行。 参阅 :ref:`commands reference <topics-commands-ref>`，来获取详细信息。
-=======
 一些Scrapy命令（如 :command:`crawl` ）必须在Scrapy项目内部运行。 参阅 :ref:`commands reference <docs-topics-commands-ref>` ，来获取详细信息。
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 还要注意的是，有些命令在从项目内部运行时可能会产生些许不同。 例如，当获取一些与特定 ``spider`` 相关联的url时，fetch命令将会产生覆盖(spider-overridden)行为(例如: ``use_agent`` 属性将会覆盖 user-agent)，这样做的意图是为了使用 ``fetch`` 命令去检测spiders是如何下载页面的。
 
 .. _docs-topics-commands-ref:
 
-<<<<<<< HEAD
- 可用的工具命令
-=======
 可用的工具命令
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 ========================
 
 本节包含了一个可用的内置命令列表及其描述和一些使用案例。 记住，你可以通过运行下面这个命令获得更多关于每个命令的信息:  ::
@@ -349,11 +337,7 @@ shell
 * 语法: ``scrapy shell [url]``
 * 是否需要项目: *no*
 
-<<<<<<< HEAD
-启动Scrapy shell访问URL(如果给定的话)，如果没有给定URL，则为空。 同样也支持Unix风格的本地文件路径，``./`` ， ``../`` 。 更多信息请参见 :ref:`docs-topics-shell` 。
-=======
 启动Scrapy shell访问URL(如果给定的话)，如果没有给定URL，则为空。 同样也支持Unix风格的本地文件路径，``./`` ， ``../`` 。 更多信息请参见 :ref:`docs-topics-scrapy-shell` 。
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 支持选项:
 
