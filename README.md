@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-# scrapy1.5-中文翻译
-=======
 Scrapy1.5-中文翻译
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 ### 目的
 
@@ -13,10 +9,6 @@ Scrapy1.5-中文翻译
 > 1. 本项目始于2018年1月6日,预计完成时间2018年5月1日(暂定)
 > 2. 目前翻译First Step中的内容
 > 3. 开始翻译Basic Concepts部分(2018-01-14)
-<<<<<<< HEAD
-> 4. 目前文章移动至gh-pages分支
-=======
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
 
 ### 注意事项
 
@@ -48,7 +40,3 @@ Scrapy1.5-中文翻译
 
 > 3. 成员名单(联系方式)
 >> catsled(bigmaidong6@163.com) Gonnchin(Gonnchin@163.com) HardyYao(hardyyao1995@qq.com) ch8936(ch8936@126.com) xiaolong321(237325670@qq.com) eaii(462546997@qq.com) YXCQU(326080508@qq.com) 5046312(5046312@qq.com)
-<<<<<<< HEAD
-=======
-
->>>>>>> 065817c4dd1c333715d0dcc744c754a3a2a1f0d6
