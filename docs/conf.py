@@ -37,7 +37,7 @@ sys.path.insert(0, path.dirname(path.dirname(__file__)))
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    'scrapydocs',
+    #'scrapydocs',
     'sphinx.ext.autodoc',
 ]
 
