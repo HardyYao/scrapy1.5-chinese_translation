@@ -10,6 +10,7 @@ Scrapy1.5-中文翻译
 > 2. 目前翻译First Step中的内容
 > 3. 开始翻译Basic Concepts部分(2018-01-14)
 > 4. 开始翻译Built-in Services部分(2018-06-09)
+> 5. 开始翻译Solving Specific Problems部分(2018-06-24)
 
 ### 注意事项
 
